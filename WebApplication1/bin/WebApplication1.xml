@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApplication1</name>
+    </assembly>
+    <members>
+        <member name="M:WebApplication1.Controllers.HelloController.Baby">
+            <summary>
+            阿華田
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApplication1.Controllers.HomeController">
+            <summary>
+            Home
+            </summary>
+        </member>
+        <member name="M:WebApplication1.Controllers.HomeController.Index">
+            <summary>
+            索引
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebApplication1.Controllers.Student">
+            <summary>
+            學生
+            </summary>
+        </member>
+    </members>
+</doc>
