@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -22,7 +23,16 @@ namespace WebApplication1.Controllers
         [ResponseType(typeof(Student))]
         public IHttpActionResult Index()
         {
-            return Ok(new Student() { Name = "Huayu", Number = "5554432" });
+            return Ok(@"{""Name"":""Huayu"",""Number"":""333333""}");
+        }
+
+        [HttpGet]
+        [ResponseType(typeof(Student))]
+        public IHttpActionResult Jsonnn()
+        {
+            var jsonString = @"{""Name"":""Huayu"",""Number"":""333333""}";
+            var obj = JsonConvert.DeserializeObject<Student>(jsonString);
+            return Ok(obj);
         }
     }
 
